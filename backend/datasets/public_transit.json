@@ -1,0 +1,463 @@
+{
+  "meta" : {
+    "view" : {
+      "id" : "dc74-f8qd",
+      "name" : "Daily Transit Ridership",
+      "assetType" : "dataset",
+      "attribution" : "Transit agencies",
+      "averageRating" : 0,
+      "category" : "Transit",
+      "createdAt" : 1596047265,
+      "description" : "Includes New York City MTA Subway, San Francisco BART Rail, Washington Metropolitan Area Transit Authority Bus and Rail",
+      "diciBackend" : false,
+      "displayType" : "table",
+      "downloadCount" : 8998,
+      "hideFromCatalog" : false,
+      "hideFromDataJson" : false,
+      "licenseId" : "USGOV_WORKS",
+      "locked" : false,
+      "newBackend" : true,
+      "numberOfComments" : 0,
+      "oid" : 38019115,
+      "provenance" : "official",
+      "publicationAppendEnabled" : false,
+      "publicationDate" : 1639671588,
+      "publicationGroup" : 17386315,
+      "publicationStage" : "published",
+      "rowsUpdatedAt" : 1666729338,
+      "tableId" : 18532795,
+      "totalTimesRated" : 0,
+      "viewCount" : 7040,
+      "viewLastModified" : 1666729335,
+      "viewType" : "tabular",
+      "approvals" : [ {
+        "reviewedAt" : 1597339931,
+        "reviewedAutomatically" : false,
+        "state" : "approved",
+        "submissionId" : 4290731,
+        "submissionObject" : "public_audience_request",
+        "submissionOutcome" : "change_audience",
+        "submittedAt" : 1597072228,
+        "targetAudience" : "public",
+        "workflowId" : 2520,
+        "reviewer" : {
+          "id" : "s4xm-twen",
+          "displayName" : "Todd Solomon"
+        },
+        "submissionDetails" : {
+          "permissionType" : "read"
+        },
+        "submissionOutcomeApplication" : {
+          "endedAt" : 1597339931,
+          "failureCount" : 0,
+          "startedAt" : 1597339931,
+          "status" : "success"
+        },
+        "submitter" : {
+          "id" : "s4xm-twen",
+          "displayName" : "Todd Solomon"
+        }
+      } ],
+      "clientContext" : {
+        "clientContextVariables" : [ ],
+        "inheritedVariables" : { }
+      },
+      "columns" : [ {
+        "id" : -1,
+        "name" : "sid",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":sid",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "id",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":id",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "position",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":position",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "created_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "created_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "updated_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "updated_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : 553171193,
+        "name" : "Agency",
+        "dataTypeName" : "text",
+        "description" : "Reporting transit agency",
+        "fieldName" : "agency",
+        "position" : 1,
+        "renderTypeName" : "text",
+        "tableColumnId" : 110202763,
+        "format" : { }
+      }, {
+        "id" : 553171194,
+        "name" : "Mode",
+        "dataTypeName" : "text",
+        "description" : "Transit",
+        "fieldName" : "mode",
+        "position" : 2,
+        "renderTypeName" : "text",
+        "tableColumnId" : 110202758,
+        "format" : { }
+      }, {
+        "id" : 553171195,
+        "name" : "Date",
+        "dataTypeName" : "calendar_date",
+        "description" : "Date corresponding to the ridership numbers",
+        "fieldName" : "date",
+        "position" : 3,
+        "renderTypeName" : "calendar_date",
+        "tableColumnId" : 110202759,
+        "format" : {
+          "view" : "date"
+        }
+      }, {
+        "id" : 553171196,
+        "name" : "Week Number",
+        "dataTypeName" : "text",
+        "description" : "The week's number in the year (1-53)",
+        "fieldName" : "week_number",
+        "position" : 4,
+        "renderTypeName" : "text",
+        "tableColumnId" : 111561269,
+        "format" : { }
+      }, {
+        "id" : 553171198,
+        "name" : "Current Ridership",
+        "dataTypeName" : "number",
+        "description" : "",
+        "fieldName" : "current_ridership",
+        "position" : 5,
+        "renderTypeName" : "number",
+        "tableColumnId" : 140337274,
+        "format" : { }
+      }, {
+        "id" : 553171197,
+        "name" : "Year",
+        "dataTypeName" : "number",
+        "description" : "",
+        "fieldName" : "baseline",
+        "position" : 6,
+        "renderTypeName" : "number",
+        "tableColumnId" : 140337273,
+        "format" : { }
+      } ],
+      "grants" : [ {
+        "inherited" : false,
+        "type" : "viewer",
+        "flags" : [ "public" ]
+      } ],
+      "license" : {
+        "name" : "Public Domain U.S. Government",
+        "termsLink" : "https://www.usa.gov/government-works"
+      },
+      "metadata" : {
+        "custom_fields" : {
+          "Common Core Extensions" : {
+            "phone" : "2023660573"
+          },
+          "Common Core" : {
+            "Contact Email" : "todd.solomon@dot.gov",
+            "Language" : "en-US",
+            "Contact Name" : "Todd Solomon",
+            "Update Frequency" : "R/P1W",
+            "License" : "http://www.usa.gov/publicdomain/label/1.0/",
+            "Program Code" : "021:042",
+            "Publisher" : "Bureau of Transportation Statistics",
+            "Bureau Code" : "021:04",
+            "Public Access Level" : "public"
+          }
+        },
+        "rowLabel" : "Daily ridership by agency and date",
+        "availableDisplayTypes" : [ "table", "fatrow", "page" ]
+      },
+      "owner" : {
+        "id" : "s4xm-twen",
+        "disabledAt" : 1706113389,
+        "displayName" : "Todd Solomon",
+        "screenName" : "Todd Solomon",
+        "type" : "interactive",
+        "flags" : [ "acceptedEula", "mayBeStoriesCoOwner" ]
+      },
+      "query" : { },
+      "rights" : [ "read" ],
+      "tableAuthor" : {
+        "id" : "s4xm-twen",
+        "disabledAt" : 1706113389,
+        "displayName" : "Todd Solomon",
+        "screenName" : "Todd Solomon",
+        "type" : "interactive",
+        "flags" : [ "acceptedEula", "mayBeStoriesCoOwner" ]
+      },
+      "tags" : [ "transit ridership", "transit", "public transit" ],
+      "flags" : [ "default", "ownerMayBeContacted", "restorable", "restorePossibleForType" ]
+    }
+  },
+  "data" : [ [ "row-kn8c-e63p~f8ku", "00000000-0000-0000-7E6A-FDBC31D540D7", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-06-05T00:00:00", "24", "266000", "2022" ]
+, [ "row-irh4.asc5-v2ub", "00000000-0000-0000-ACF1-FBE4DB302B53", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-06-06T00:00:00", "24", "506000", "2022" ]
+, [ "row-chee_wtqk.gu5h", "00000000-0000-0000-E663-3BC0A7F402A5", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-06-07T00:00:00", "24", "536000", "2022" ]
+, [ "row-xjj6_h2uc-yqpd", "00000000-0000-0000-527D-D3B26BCD14F9", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-06-08T00:00:00", "24", "551000", "2022" ]
+, [ "row-if32.5txx-egwu", "00000000-0000-0000-63A4-C68CA83BE9C7", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-06-09T00:00:00", "24", "539000", "2022" ]
+, [ "row-fytc_zeyj-y5fx", "00000000-0000-0000-6893-70794EDCED33", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-06-10T00:00:00", "24", "537000", "2022" ]
+, [ "row-itfp_fdum.f2d6", "00000000-0000-0000-D9D4-2C23BD6E6691", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-06-11T00:00:00", "24", "389000", "2022" ]
+, [ "row-i26x_x3sn~ebnv", "00000000-0000-0000-7690-1D33A4F13CDA", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-06-25T00:00:00", "27", "2287013", "2022" ]
+, [ "row-bbfg.4y5s-s5st", "00000000-0000-0000-9F09-B435DA2CFC9D", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-06-26T00:00:00", "27", "2012595", "2022" ]
+, [ "row-8xtp.7vxm_ezcy", "00000000-0000-0000-559B-BC0212C24826", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-06-27T00:00:00", "27", "2938858", "2022" ]
+, [ "row-vq7d.ebst.rh7z", "00000000-0000-0000-DBDF-A808F1293083", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-06-28T00:00:00", "27", "3255241", "2022" ]
+, [ "row-gx3z_hj94_sqqb", "00000000-0000-0000-F83E-45E1638BB1E4", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-06-29T00:00:00", "27", "3256053", "2022" ]
+, [ "row-4iue.7cpi~6x8e", "00000000-0000-0000-49A3-83C97CDD9404", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-06-30T00:00:00", "27", "3157979", "2022" ]
+, [ "row-d98c-unp9~pgk9", "00000000-0000-0000-6F54-33561D6562C8", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-07-01T00:00:00", "27", "2832840", "2022" ]
+, [ "row-k7fb~9rqi.e5rf", "00000000-0000-0000-D4F2-6ADDDF3C9440", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-07-02T00:00:00", "28", "1849135", "2022" ]
+, [ "row-jzsi-qjna_fnb4", "00000000-0000-0000-9F7A-A6960DDDE5A7", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-07-03T00:00:00", "28", "1656683", "2022" ]
+, [ "row-gxre_9tjs~ini5", "00000000-0000-0000-B62E-8E9EC21F8BBF", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-07-04T00:00:00", "28", "1610232", "2022" ]
+, [ "row-b8tk_73hv_sh8e", "00000000-0000-0000-F4DE-DD211EB1DA7E", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-07-05T00:00:00", "28", "2808749", "2022" ]
+, [ "row-gzkg~qkzp~gwm3", "00000000-0000-0000-7B78-3B5066988C8A", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-07-06T00:00:00", "28", "3072910", "2022" ]
+, [ "row-2izz-867t.et9s", "00000000-0000-0000-2995-E4349A4D2BDC", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-07-07T00:00:00", "28", "3122067", "2022" ]
+, [ "row-2wgr.wh7v-v79c", "00000000-0000-0000-2A29-235E8D5110F4", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-07-08T00:00:00", "28", "2907947", "2022" ]
+, [ "row-ag6m_4vje.z8zb", "00000000-0000-0000-CD6C-57EE4223D17E", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-07-09T00:00:00", "29", "2063982", "2022" ]
+, [ "row-pcdt-vrue-qzyu", "00000000-0000-0000-C2B9-91D83441B016", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-07-10T00:00:00", "29", "1683057", "2022" ]
+, [ "row-w4yu_6dp8~5u3r", "00000000-0000-0000-FFD4-DB1C49EF0318", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-07-11T00:00:00", "29", "2882750", "2022" ]
+, [ "row-wjyb_4eqb_caax", "00000000-0000-0000-2879-65D6D5711838", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-07-12T00:00:00", "29", "3155100", "2022" ]
+, [ "row-y7wm-7vcu.jrna", "00000000-0000-0000-7532-DE40CEBBC386", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-07-13T00:00:00", "29", "3235923", "2022" ]
+, [ "row-ifb9-tm28~3n34", "00000000-0000-0000-10FB-22CB1C4280B9", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-07-14T00:00:00", "29", "3209517", "2022" ]
+, [ "row-wsp3-7sah.sfn7", "00000000-0000-0000-50AC-87704ED23D62", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-07-15T00:00:00", "29", "3027178", "2022" ]
+, [ "row-38w4.95gj_km3n", "00000000-0000-0000-07D7-F8948F13256E", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-07-16T00:00:00", "30", "2093270", "2022" ]
+, [ "row-xmmf~h6dm.yi2j", "00000000-0000-0000-8DB0-82AF7303948E", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-07-17T00:00:00", "30", "1674929", "2022" ]
+, [ "row-79tm.y5ie~4xew", "00000000-0000-0000-3D31-0725688814CB", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-07-18T00:00:00", "30", "2725555", "2022" ]
+, [ "row-ghnc-zujd.uikn", "00000000-0000-0000-7544-8BF72F234AB7", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-07-19T00:00:00", "30", "3175609", "2022" ]
+, [ "row-yety.hn99~fjsa", "00000000-0000-0000-BBDF-AAB529A7702E", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-07-20T00:00:00", "30", "3197109", "2022" ]
+, [ "row-mq8q_uzqy_tnmr", "00000000-0000-0000-B50B-D0A9E9FD3A0E", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-07-21T00:00:00", "30", "3115263", "2022" ]
+, [ "row-fqkn_2ngg~a9bs", "00000000-0000-0000-B39F-DD7680C61C82", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-07-22T00:00:00", "30", "2948074", "2022" ]
+, [ "row-xpwq.ssrg-jawz", "00000000-0000-0000-67A2-29115E7535E2", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-07-23T00:00:00", "31", "2028728", "2022" ]
+, [ "row-rzaz.ibnw~7jv8", "00000000-0000-0000-32A7-D1747A7FC2E1", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-07-24T00:00:00", "31", "1596201", "2022" ]
+, [ "row-htcc~jdsi~32mi", "00000000-0000-0000-93FD-14EC7908A384", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-07-25T00:00:00", "31", "2733414", "2022" ]
+, [ "row-3x82_wpeh.yghy", "00000000-0000-0000-CD86-8E29C03BBF56", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-07-26T00:00:00", "31", "3181480", "2022" ]
+, [ "row-w4jr~tpgk.s7he", "00000000-0000-0000-3ECB-C1F513BFE5B9", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-07-27T00:00:00", "31", "3239463", "2022" ]
+, [ "row-fage-nxgn~fcma", "00000000-0000-0000-C832-E5EADA3444AC", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-07-28T00:00:00", "31", "3158334", "2022" ]
+, [ "row-cisu-iv8c_kmyx", "00000000-0000-0000-B5A4-8DA642EFD0F4", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-07-29T00:00:00", "31", "2938378", "2022" ]
+, [ "row-6ni7~pwyc_agc9", "00000000-0000-0000-F140-A859FB1115FC", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-07-30T00:00:00", "32", "2074477", "2022" ]
+, [ "row-kycp-4nde-xest", "00000000-0000-0000-037A-2ED8F89591D5", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-07-31T00:00:00", "32", "1649100", "2022" ]
+, [ "row-yfbz_6kwi.mgmy", "00000000-0000-0000-14B1-F2ABB44F3683", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-08-01T00:00:00", "32", "2744935", "2022" ]
+, [ "row-h5mh_n4hk-myry", "00000000-0000-0000-3B64-3779939A3E0F", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-08-02T00:00:00", "32", "3076553", "2022" ]
+, [ "row-a5em_k8q3~y5in", "00000000-0000-0000-6D5E-1EADB56C2BE3", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-08-03T00:00:00", "32", "3130208", "2022" ]
+, [ "row-gb8f-fx6j.5usb", "00000000-0000-0000-2623-EC587E7FB47C", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-08-04T00:00:00", "32", "3054485", "2022" ]
+, [ "row-cvts_bj4d.sgr2", "00000000-0000-0000-8253-B2F15831DEAC", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-08-05T00:00:00", "32", "2826909", "2022" ]
+, [ "row-cj8h_pwek.7exh", "00000000-0000-0000-F877-5C0E30473A27", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-08-06T00:00:00", "33", "1999613", "2022" ]
+, [ "row-4n22_dgmt~zyxq", "00000000-0000-0000-CF85-5376D0BD835E", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-08-07T00:00:00", "33", "1542464", "2022" ]
+, [ "row-hx8k_sfwm_n8qr", "00000000-0000-0000-288C-6327A0BBBD4E", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-08-08T00:00:00", "33", "2710924", "2022" ]
+, [ "row-xnjz~q4ts-thsi", "00000000-0000-0000-1B5C-56E7FB1EB2E5", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-08-09T00:00:00", "33", "3019719", "2022" ]
+, [ "row-zmzw-hgz6_n2nv", "00000000-0000-0000-4055-B98B4A49E045", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-08-10T00:00:00", "33", "3140551", "2022" ]
+, [ "row-n9fv~4j24~77uk", "00000000-0000-0000-78F4-6CE64F83FF07", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-08-11T00:00:00", "33", "3099390", "2022" ]
+, [ "row-9xgi~nu93.4qas", "00000000-0000-0000-BA8C-B5EEB24155EF", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-08-12T00:00:00", "33", "2969335", "2022" ]
+, [ "row-4akm_8n6a~bhp3", "00000000-0000-0000-C057-471B4722AF44", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-08-13T00:00:00", "34", "2090849", "2022" ]
+, [ "row-8ja7~qesn-fue9", "00000000-0000-0000-BFFB-0F4D5EA69973", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-08-14T00:00:00", "34", "1679142", "2022" ]
+, [ "row-e4we-7wak_svte", "00000000-0000-0000-B5EC-E6EC5C47E161", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-08-15T00:00:00", "34", "2773742", "2022" ]
+, [ "row-92va_zsqu.j5ik", "00000000-0000-0000-8D87-FC22C5C6B6BB", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-08-16T00:00:00", "34", "3052120", "2022" ]
+, [ "row-kjtu-g2ab-z875", "00000000-0000-0000-1CBE-9185971843AF", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-08-17T00:00:00", "34", "3080107", "2022" ]
+, [ "row-ycfx~ui3n_m69c", "00000000-0000-0000-1849-45B0602052F1", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-08-18T00:00:00", "34", "3083762", "2022" ]
+, [ "row-kqd7.rf66_aizi", "00000000-0000-0000-9108-C8539FA1A5EF", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-08-19T00:00:00", "34", "2923869", "2022" ]
+, [ "row-dmjr.hyig.cjri", "00000000-0000-0000-977B-5EE70C1192B3", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-08-20T00:00:00", "35", "2040321", "2022" ]
+, [ "row-dg2m.27ak-96yi", "00000000-0000-0000-09AC-037583B863F2", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-08-21T00:00:00", "35", "1620694", "2022" ]
+, [ "row-md9x.jcg3.wqw9", "00000000-0000-0000-EB31-0CFD01EE1426", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-08-22T00:00:00", "35", "2628070", "2022" ]
+, [ "row-cmp5-edj9.nsyh", "00000000-0000-0000-27C0-531CB9DB0D6C", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-08-23T00:00:00", "35", "2998518", "2022" ]
+, [ "row-u23k~jeti~2f6h", "00000000-0000-0000-F478-A9F1E542446E", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-08-24T00:00:00", "35", "3026746", "2022" ]
+, [ "row-6yvu_s6u7.3qvg", "00000000-0000-0000-CD9A-3647BBDEA1BF", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-08-25T00:00:00", "35", "3097023", "2022" ]
+, [ "row-4j5i-jm69_tg65", "00000000-0000-0000-D03C-F70C2F42D64F", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-08-26T00:00:00", "35", "2868622", "2022" ]
+, [ "row-i6et-ntfi_gyz9", "00000000-0000-0000-A9D5-BB1B297C568A", 0, 1666729338, null, 1666729338, null, "{ }", "New York City MTA Rail", "Transit", "2022-08-27T00:00:00", "35", "2068756", "2022" ]
+, [ "row-bnas-q6ct~gii2", "00000000-0000-0000-91EC-B472E5CF4D6F", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-06-12T00:00:00", "25", "296000", "2022" ]
+, [ "row-pxji.7cjw_ei5j", "00000000-0000-0000-7FFC-45CFFA031FAC", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-06-13T00:00:00", "25", "518000", "2022" ]
+, [ "row-wmty_avpz.52hy", "00000000-0000-0000-4C64-918D4892EA93", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-06-14T00:00:00", "25", "549000", "2022" ]
+, [ "row-2ijx.p5r5-28yc", "00000000-0000-0000-AAD1-020AC93B04EB", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-06-15T00:00:00", "25", "572000", "2022" ]
+, [ "row-76ah_88ud.upg6", "00000000-0000-0000-2ED9-F3BA88C35F9F", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-06-16T00:00:00", "25", "551000", "2022" ]
+, [ "row-pr5t~n6f8.exjw", "00000000-0000-0000-FC7F-81170EB13707", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-06-17T00:00:00", "25", "543000", "2022" ]
+, [ "row-7cxz~2wdm-njn8", "00000000-0000-0000-4945-4FE96D399B42", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-06-18T00:00:00", "25", "400000", "2022" ]
+, [ "row-v4w8.2hhk.3tkp", "00000000-0000-0000-FDDE-C5F5425CAFED", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-06-19T00:00:00", "26", "305000", "2022" ]
+, [ "row-75uu.hekn.95s3", "00000000-0000-0000-7505-E1901A7DDF35", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-06-20T00:00:00", "26", "331000", "2022" ]
+, [ "row-2kat_kmbw.m6dz", "00000000-0000-0000-26AC-D89E3C37D8DE", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-06-21T00:00:00", "26", "536000", "2022" ]
+, [ "row-mtcq~gr2q_x6re", "00000000-0000-0000-B112-D52884CD4593", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-06-22T00:00:00", "26", "525000", "2022" ]
+, [ "row-kpxv~v753.5ur3", "00000000-0000-0000-A1A5-E2C98D793345", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-06-23T00:00:00", "26", "507000", "2022" ]
+, [ "row-mqmj~44h8~s3wt", "00000000-0000-0000-95E9-11FE0FF72EE3", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-06-24T00:00:00", "26", "522000", "2022" ]
+, [ "row-jebx.dyep_czhr", "00000000-0000-0000-1368-7553C4F94058", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-06-25T00:00:00", "26", "363000", "2022" ]
+, [ "row-jm9k~mcy8_x8f4", "00000000-0000-0000-D402-C326E95BDCDD", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-06-26T00:00:00", "27", "265000", "2022" ]
+, [ "row-97pe~z9ns.v8fm", "00000000-0000-0000-0258-32332FF740BB", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-06-27T00:00:00", "27", "459000", "2022" ]
+, [ "row-44sr_89dy-ydq3", "00000000-0000-0000-7DCB-B9AB17727125", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-06-28T00:00:00", "27", "532000", "2022" ]
+, [ "row-6v5z~etsj_zma3", "00000000-0000-0000-FEC9-3395EB5F1947", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-06-29T00:00:00", "27", "522000", "2022" ]
+, [ "row-t36c~tpde_ar8t", "00000000-0000-0000-946C-B962A294D00E", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-06-30T00:00:00", "27", "506000", "2022" ]
+, [ "row-23wk-xjdv~ke8r", "00000000-0000-0000-E1FD-02019DDDE867", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-07-01T00:00:00", "27", "483000", "2022" ]
+, [ "row-nwvm.9drx~f7s8", "00000000-0000-0000-3ABB-0ED23D447674", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-07-02T00:00:00", "27", "328000", "2022" ]
+, [ "row-xu3f_derr~6d5t", "00000000-0000-0000-0BD9-074C897D17D6", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-07-03T00:00:00", "28", "298000", "2022" ]
+, [ "row-cd6e.ppn4.duvr", "00000000-0000-0000-0BB9-F852B9FDDF2E", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-07-04T00:00:00", "28", "387000", "2022" ]
+, [ "row-g4p6.wcch~w6fj", "00000000-0000-0000-A651-70BDB2FDACC4", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-07-05T00:00:00", "28", "481000", "2022" ]
+, [ "row-94w6-nwmy.6af3", "00000000-0000-0000-11AD-37396B62038D", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-07-06T00:00:00", "28", "518000", "2022" ]
+, [ "row-t6v4_ik3f~aunz", "00000000-0000-0000-951A-5B875A5C39A5", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-07-07T00:00:00", "28", "508000", "2022" ]
+, [ "row-jz5u-k82q~azr9", "00000000-0000-0000-F01E-63A90191C767", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-07-08T00:00:00", "28", "493000", "2022" ]
+, [ "row-4pux~94fs-n7ed", "00000000-0000-0000-778B-6520E359F1A8", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-07-09T00:00:00", "28", "278000", "2022" ]
+, [ "row-gqw2_2m9k-2qc4", "00000000-0000-0000-5546-0F60071A3541", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-07-10T00:00:00", "29", "271000", "2022" ]
+, [ "row-mag6.dxrk_35qu", "00000000-0000-0000-51B7-20A3DC88F5FB", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-07-11T00:00:00", "29", "496000", "2022" ]
+, [ "row-6dtd_bva9.z62w", "00000000-0000-0000-711B-BADE34793018", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-07-12T00:00:00", "29", "532000", "2022" ]
+, [ "row-txju_vtwq_zwun", "00000000-0000-0000-2A3B-FF806C4599C8", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-07-13T00:00:00", "29", "558000", "2022" ]
+, [ "row-pu9h_5zm3.q5xd", "00000000-0000-0000-B953-3CA6D485F864", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-07-14T00:00:00", "29", "553000", "2022" ]
+, [ "row-xxwx~6hii.k38c", "00000000-0000-0000-1544-92130B0EE696", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-07-15T00:00:00", "29", "520000", "2022" ]
+, [ "row-xn56_7ahv.6drk", "00000000-0000-0000-8191-8D9F423CBF6D", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-07-16T00:00:00", "29", "348000", "2022" ]
+, [ "row-uqkt~drv7-hvs4", "00000000-0000-0000-F62A-34BDF54D95D6", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-07-17T00:00:00", "30", "258000", "2022" ]
+, [ "row-s2di_ihwi~icn7", "00000000-0000-0000-4441-EE02F4E80E24", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-07-18T00:00:00", "30", "476000", "2022" ]
+, [ "row-vfea~wzyp-hc7u", "00000000-0000-0000-17D4-7DF4B483FBFB", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-07-19T00:00:00", "30", "534000", "2022" ]
+, [ "row-siz7.6nmg_e9v9", "00000000-0000-0000-40B5-34C4165A7CEE", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-07-20T00:00:00", "30", "540000", "2022" ]
+, [ "row-9pus~afme_3de8", "00000000-0000-0000-9998-3C1CB610B940", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-07-21T00:00:00", "30", "522000", "2022" ]
+, [ "row-xph4-qyrg_87rg", "00000000-0000-0000-7DB1-BE3856633CB2", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-07-22T00:00:00", "30", "487000", "2022" ]
+, [ "row-4n4c_bxes~225k", "00000000-0000-0000-7FD0-7BAB98CA9CEA", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-07-23T00:00:00", "30", "333000", "2022" ]
+, [ "row-uyup_z5bb_mkjr", "00000000-0000-0000-4C7C-F191E925EE67", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-07-24T00:00:00", "31", "261000", "2022" ]
+, [ "row-bgrt-tfdr.uqij", "00000000-0000-0000-1355-9283FE6F95C2", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-07-25T00:00:00", "31", "468000", "2022" ]
+, [ "row-92de-fetq_6bgp", "00000000-0000-0000-F999-02144D4C3843", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-07-26T00:00:00", "31", "533000", "2022" ]
+, [ "row-98ps-b2c6-5sfc", "00000000-0000-0000-1AED-60F7984B12B7", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-07-27T00:00:00", "31", "539000", "2022" ]
+, [ "row-jgjk-m625~cvse", "00000000-0000-0000-C7EE-CFE28AF5BD53", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-07-28T00:00:00", "31", "537000", "2022" ]
+, [ "row-aecr_v3zm.kf76", "00000000-0000-0000-7F16-2E3D91AF742F", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-07-29T00:00:00", "31", "506000", "2022" ]
+, [ "row-uumn~hszs_5k9p", "00000000-0000-0000-2FB3-4E36034E29E8", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-07-30T00:00:00", "31", "381000", "2022" ]
+, [ "row-bnjc.y288.u2wu", "00000000-0000-0000-79BC-54B728C1C994", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-07-31T00:00:00", "32", "275000", "2022" ]
+, [ "row-u6iq.jjcn_8eyt", "00000000-0000-0000-9850-F058510D9735", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-08-01T00:00:00", "32", "498000", "2022" ]
+, [ "row-fs6z~88cx~53f9", "00000000-0000-0000-7A08-7CEDDF38BA98", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-08-02T00:00:00", "32", "543000", "2022" ]
+, [ "row-rde4_vqg4~uu4c", "00000000-0000-0000-CA2E-78CEE8C4AC50", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-08-03T00:00:00", "32", "548000", "2022" ]
+, [ "row-e2tq.q85a_qd94", "00000000-0000-0000-D6E4-9D4517E47394", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-08-04T00:00:00", "32", "511000", "2022" ]
+, [ "row-dbqk-pks5~jitn", "00000000-0000-0000-9A90-1EA3B61331EB", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-08-05T00:00:00", "32", "466000", "2022" ]
+, [ "row-d8ha_8zub.xfix", "00000000-0000-0000-5B60-173BFE1F3AB3", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-08-06T00:00:00", "32", "341000", "2022" ]
+, [ "row-87dd.u59t_qhik", "00000000-0000-0000-0D63-774546D4C5AD", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-08-07T00:00:00", "33", "258000", "2022" ]
+, [ "row-rbm9-mrwm~g6sq", "00000000-0000-0000-698B-C9D1EF5ACF45", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-08-08T00:00:00", "33", "471000", "2022" ]
+, [ "row-mfsa_4mtp.tx5p", "00000000-0000-0000-4A9F-4FC78DA7D77D", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-08-09T00:00:00", "33", "506000", "2022" ]
+, [ "row-a949~gppc.cijf", "00000000-0000-0000-5AD8-59277FF47B93", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-08-10T00:00:00", "33", "490000", "2022" ]
+, [ "row-mzwf~yeq2~pdta", "00000000-0000-0000-FC3F-16A86CBADA9D", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-08-11T00:00:00", "33", "508000", "2022" ]
+, [ "row-9mtj.udhq~3bxa", "00000000-0000-0000-E7A0-1B15BA25AAFD", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-08-12T00:00:00", "33", "501000", "2022" ]
+, [ "row-i6m8_4b2t_xiem", "00000000-0000-0000-605C-93477FB970AC", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-08-13T00:00:00", "33", "347000", "2022" ]
+, [ "row-xcrs-twt7.neve", "00000000-0000-0000-5946-F9BF7ABE5261", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-08-14T00:00:00", "34", "259000", "2022" ]
+, [ "row-tmbz.wyii.gabg", "00000000-0000-0000-F2E8-40C545FD3593", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-08-15T00:00:00", "34", "469000", "2022" ]
+, [ "row-pjaq~wwkp_cu8j", "00000000-0000-0000-2AD4-65950F8A12BB", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-08-16T00:00:00", "34", "527000", "2022" ]
+, [ "row-rnm6~b3we_884n", "00000000-0000-0000-87B1-83E19519E483", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-08-17T00:00:00", "34", "523000", "2022" ]
+, [ "row-edq8.sbf6-fqfb", "00000000-0000-0000-890A-22662F324456", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-08-18T00:00:00", "34", "509000", "2022" ]
+, [ "row-hwtg-47i2.4dag", "00000000-0000-0000-A212-DBFE8212DF1E", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-08-19T00:00:00", "34", "483000", "2022" ]
+, [ "row-2ph6_8gqd_gsaz", "00000000-0000-0000-3862-030AD7E4D35D", 0, 1666729338, null, 1666729338, null, "{ }", "WMATA Bus and Rail", "Transit", "2022-08-20T00:00:00", "34", "333000", "2022" ]
+, [ "row-96ya~ia6i~ww72", "00000000-0000-0000-5170-13810EF8B551", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-06-26T00:00:00", "27", "133905", "2022" ]
+, [ "row-dq5z_tx5t-w78y", "00000000-0000-0000-FB7B-80F6A3534109", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-06-27T00:00:00", "27", "121117", "2022" ]
+, [ "row-tbuc-mcf6~bybt", "00000000-0000-0000-D668-ED6B06EF3D9D", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-06-28T00:00:00", "27", "143650", "2022" ]
+, [ "row-6te9-v924.wu9r", "00000000-0000-0000-D9FB-81F40C92116D", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-06-29T00:00:00", "27", "146086", "2022" ]
+, [ "row-4ebt.f44j_fxkz", "00000000-0000-0000-284B-29C76A69ED85", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-06-30T00:00:00", "27", "139546", "2022" ]
+, [ "row-nuf3~v7q8.cfzb", "00000000-0000-0000-9AEA-B26B3C7B6F71", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-07-01T00:00:00", "27", "123370", "2022" ]
+, [ "row-hti5~p2bs~bvcv", "00000000-0000-0000-6D86-21312179DB34", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-07-02T00:00:00", "27", "77333", "2022" ]
+, [ "row-yet4.stfg.7h8d", "00000000-0000-0000-24D8-6475766A43D4", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-07-03T00:00:00", "28", "60912", "2022" ]
+, [ "row-bwzt-9fr6.d6a3", "00000000-0000-0000-346B-11A95C1D72B8", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-07-04T00:00:00", "28", "61609", "2022" ]
+, [ "row-9sv7-m7cm~paex", "00000000-0000-0000-3896-795B45FB5BC2", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-07-05T00:00:00", "28", "124095", "2022" ]
+, [ "row-exvu.y2g3-n3ut", "00000000-0000-0000-8225-812808A8DE7B", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-07-06T00:00:00", "28", "137052", "2022" ]
+, [ "row-mcwi_qada.g76x", "00000000-0000-0000-44FE-57DB6583D461", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-07-07T00:00:00", "28", "135560", "2022" ]
+, [ "row-i33e_ru7u~y4vc", "00000000-0000-0000-1D2F-DCE7E492FB57", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-07-08T00:00:00", "28", "123809", "2022" ]
+, [ "row-kk6d-ua56~wffa", "00000000-0000-0000-7C8C-B5B46CF361F8", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-07-09T00:00:00", "28", "79350", "2022" ]
+, [ "row-xgvp_pvr5~zn5h", "00000000-0000-0000-C070-6F8F84A3F367", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-07-10T00:00:00", "29", "60609", "2022" ]
+, [ "row-f5g4_ue4w.as3x", "00000000-0000-0000-B65C-6C29CA45F247", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-07-11T00:00:00", "29", "122995", "2022" ]
+, [ "row-5dbn_hc55-7g3h", "00000000-0000-0000-6EBA-D994F7991513", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-07-12T00:00:00", "29", "145279", "2022" ]
+, [ "row-j7i9_rnhv-uug9", "00000000-0000-0000-B8C7-B94300091BB7", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-07-13T00:00:00", "29", "145043", "2022" ]
+, [ "row-wznd-9vnm.bs93", "00000000-0000-0000-E875-C456BDF38EBC", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-07-14T00:00:00", "29", "144092", "2022" ]
+, [ "row-8j8u_wsg7_rerr", "00000000-0000-0000-3527-BC35A5B4A23D", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-07-15T00:00:00", "29", "126737", "2022" ]
+, [ "row-yb25~mw8t~5rrc", "00000000-0000-0000-A5E3-1A760CF9906E", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-07-16T00:00:00", "29", "83108", "2022" ]
+, [ "row-res2.rtiw_hztz", "00000000-0000-0000-71C0-AB9B9E22C18D", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-07-17T00:00:00", "30", "60271", "2022" ]
+, [ "row-a7u5.34yg-6uzi", "00000000-0000-0000-A70B-4052E2189057", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-07-18T00:00:00", "30", "119572", "2022" ]
+, [ "row-xpnm.byx9.yt3q", "00000000-0000-0000-33A9-58F8C7C90A02", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-07-19T00:00:00", "30", "139269", "2022" ]
+, [ "row-aj7s~vayp-f6e9", "00000000-0000-0000-8ECB-AD262CB81313", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-07-20T00:00:00", "30", "141088", "2022" ]
+, [ "row-85pe~nkuz.89iz", "00000000-0000-0000-192B-00D8848FC66C", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-07-21T00:00:00", "30", "145462", "2022" ]
+, [ "row-zssq_t3x8.f6uy", "00000000-0000-0000-D03E-90950DC459A0", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-07-22T00:00:00", "30", "122926", "2022" ]
+, [ "row-5cnv.afb9-7v2k", "00000000-0000-0000-836B-0D776562CAC1", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-07-23T00:00:00", "30", "83212", "2022" ]
+, [ "row-ewwd-m5ar~qwxk", "00000000-0000-0000-73A1-A4D22983648C", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-07-24T00:00:00", "31", "62716", "2022" ]
+, [ "row-3j4u.p3uv.jhfk", "00000000-0000-0000-62D8-15B1D3FFA1E9", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-07-25T00:00:00", "31", "120450", "2022" ]
+, [ "row-2was-4hgn~i29c", "00000000-0000-0000-ECD8-D45EAF6FC2E6", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-07-26T00:00:00", "31", "145539", "2022" ]
+, [ "row-dpgk.i8uv-6uig", "00000000-0000-0000-B715-C85EB1F8B70D", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-07-27T00:00:00", "31", "143217", "2022" ]
+, [ "row-hz84_95d6-h75m", "00000000-0000-0000-014D-42CBB0D0166D", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-07-28T00:00:00", "31", "143962", "2022" ]
+, [ "row-8sbn_crbw~q3qy", "00000000-0000-0000-CAB4-DE255DD484E9", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-07-29T00:00:00", "31", "127926", "2022" ]
+, [ "row-8syy.q2sb_ii6z", "00000000-0000-0000-6652-8C7367CB15FE", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-07-30T00:00:00", "31", "78366", "2022" ]
+, [ "row-mats_epym~inhy", "00000000-0000-0000-78AC-4A79480E4FD9", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-07-31T00:00:00", "32", "58169", "2022" ]
+, [ "row-vp4j.2q94-pvm2", "00000000-0000-0000-4032-8B94DA968573", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-08-01T00:00:00", "32", "122881", "2022" ]
+, [ "row-e2p5_ebbd_iss4", "00000000-0000-0000-3D91-537AEB24639A", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-08-02T00:00:00", "32", "143839", "2022" ]
+, [ "row-2d7j.2x5b~i6fx", "00000000-0000-0000-2BA5-FAB2B08E480C", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-08-03T00:00:00", "32", "145258", "2022" ]
+, [ "row-m8zm_5ewm.uvyq", "00000000-0000-0000-87EF-53665327C199", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-08-04T00:00:00", "32", "147812", "2022" ]
+, [ "row-7afh~i7mi-bfyf", "00000000-0000-0000-CED2-B088682C743C", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-08-05T00:00:00", "32", "134628", "2022" ]
+, [ "row-xm5w-p6as-entp", "00000000-0000-0000-81A1-B4BD28B2DEEB", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-08-06T00:00:00", "32", "93947", "2022" ]
+, [ "row-wm64.jpgj_mwcm", "00000000-0000-0000-710E-B5EA5923A54A", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-08-07T00:00:00", "33", "73068", "2022" ]
+, [ "row-sgfs-3iqj-mnsh", "00000000-0000-0000-F707-0FE0E169C049", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-08-08T00:00:00", "33", "122450", "2022" ]
+, [ "row-y5xz~pxi4.dru5", "00000000-0000-0000-2934-8A7A590C2E01", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-08-09T00:00:00", "33", "145652", "2022" ]
+, [ "row-reps_yzdf-kyij", "00000000-0000-0000-9FBA-84F7C9BF6747", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-08-10T00:00:00", "33", "147210", "2022" ]
+, [ "row-rv35-r3b7-kchc", "00000000-0000-0000-9755-FF7DA9EF6812", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-08-11T00:00:00", "33", "144980", "2022" ]
+, [ "row-ribq~9kb2_ximr", "00000000-0000-0000-0D6A-519116520CF5", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-08-12T00:00:00", "33", "132008", "2022" ]
+, [ "row-iry3.mg54~gj4m", "00000000-0000-0000-D1A9-E81C344EAD26", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-08-13T00:00:00", "33", "84889", "2022" ]
+, [ "row-nkmz.ev5n~zw3w", "00000000-0000-0000-FEC8-A619BCA07B62", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-08-14T00:00:00", "34", "66211", "2022" ]
+, [ "row-ykp6~zexz.y8rv", "00000000-0000-0000-F91B-02C76FC108D4", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-08-15T00:00:00", "34", "126944", "2022" ]
+, [ "row-d4du.d94d.6zja", "00000000-0000-0000-6012-BB72FB1A792D", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-08-16T00:00:00", "34", "148889", "2022" ]
+, [ "row-ygjz_u49q~2m39", "00000000-0000-0000-5359-2ED4DC248F13", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-08-17T00:00:00", "34", "151381", "2022" ]
+, [ "row-r67r.vyry~p3y2", "00000000-0000-0000-BFBC-A484986E45A3", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-08-18T00:00:00", "34", "155066", "2022" ]
+, [ "row-g8cw-66hf.gjgm", "00000000-0000-0000-6D40-282C160F030E", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-08-19T00:00:00", "34", "137325", "2022" ]
+, [ "row-hq3b_dc5k-xrgs", "00000000-0000-0000-8B93-42EEE1A8F903", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-08-20T00:00:00", "34", "88994", "2022" ]
+, [ "row-9rux~qsen_uc6f", "00000000-0000-0000-7BAF-FCE5C2B98C7E", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-08-21T00:00:00", "35", "61095", "2022" ]
+, [ "row-ii76_vy2c-rcp5", "00000000-0000-0000-1381-BF5FF8848016", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-08-22T00:00:00", "35", "132599", "2022" ]
+, [ "row-atzu_3x5i.9vb3", "00000000-0000-0000-3E0F-2A7FA72F892F", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-08-23T00:00:00", "35", "156589", "2022" ]
+, [ "row-igbs_9qmd~efcq", "00000000-0000-0000-4AB1-82F6E4852F38", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-08-24T00:00:00", "35", "156797", "2022" ]
+, [ "row-uttc~hfsf~6bgb", "00000000-0000-0000-1D55-8EB0B5FF5947", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-08-25T00:00:00", "35", "158309", "2022" ]
+, [ "row-zaez.7it7-x6ht", "00000000-0000-0000-5187-C91A254CA34E", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-08-26T00:00:00", "35", "137183", "2022" ]
+, [ "row-9kb4.pctd_8r6k", "00000000-0000-0000-152E-756F50D493DB", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-08-27T00:00:00", "35", "88791", "2022" ]
+, [ "row-et8p_curj_hx5e", "00000000-0000-0000-D37C-54F2C9FF0045", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-08-28T00:00:00", "36", "61428", "2022" ]
+, [ "row-4i83~7vkt-83ki", "00000000-0000-0000-2E66-AD934D8B086D", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-08-29T00:00:00", "36", "133945", "2022" ]
+, [ "row-6aby.zkvf~4acp", "00000000-0000-0000-F056-36286DE797E9", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-08-30T00:00:00", "36", "155141", "2022" ]
+, [ "row-ifuy_9aqx~yf3j", "00000000-0000-0000-70EE-3CF9E17B620A", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-08-31T00:00:00", "36", "161236", "2022" ]
+, [ "row-vnkz_vg8c~88mk", "00000000-0000-0000-9C94-8B9EF941C3A4", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-09-01T00:00:00", "36", "159373", "2022" ]
+, [ "row-ebxd.4mch_5t7a", "00000000-0000-0000-DD99-14D9FEDF3D96", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-09-02T00:00:00", "36", "138449", "2022" ]
+, [ "row-b2qs_kq7z~8u2q", "00000000-0000-0000-9B2D-37E3E506D9CA", 0, 1666729338, null, 1666729338, null, "{ }", "San Francisco BART Rail", "Transit", "2022-09-03T00:00:00", "36", "90241", "2022" ]
+ ]
+}
