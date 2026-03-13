@@ -21,7 +21,7 @@ export default function Sidebar() {
       <div className="p-6 border-b border-border">
         <h1 className="text-xl font-bold text-primary flex items-center gap-2">
           <Map className="w-6 h-6" />
-          Urban Insights
+          UrbanNexus
         </h1>
       </div>
 
