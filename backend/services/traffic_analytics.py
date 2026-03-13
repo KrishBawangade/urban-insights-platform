@@ -41,11 +41,36 @@ def calculate_overview(df: pd.DataFrame):
 
 def hourly_trend(df: pd.DataFrame):
     if df.empty: return []
-    df_hour = df.copy()
-    df_hour['hour'] = df_hour['DateTime'].dt.hour
-    trend = df_hour.groupby('hour')['Vehicles'].mean().reset_index()
-    # Ensure JSON serializable formatting
-    return [{"hour": int(row['hour']), "vehicles": round(row['Vehicles'], 1)} for _, row in trend.iterrows()]
+    
+    # Ensure datetime object
+    df['DateTime'] = pd.to_datetime(df['DateTime'])
+    latest_time = df['DateTime'].max()
+    
+    # Filter today (last 24 hours)
+    today_start = latest_time - pd.Timedelta(hours=24)
+    df_today = df[(df['DateTime'] > today_start) & (df['DateTime'] <= latest_time)].copy()
+    
+    # Filter yesterday (24-48 hours ago)
+    yesterday_start = today_start - pd.Timedelta(hours=24)
+    df_yesterday = df[(df['DateTime'] > yesterday_start) & (df['DateTime'] <= today_start)].copy()
+    
+    df_today['hour'] = df_today['DateTime'].dt.hour
+    df_yesterday['hour'] = df_yesterday['DateTime'].dt.hour
+    
+    today_trend = df_today.groupby('hour')['Vehicles'].mean().to_dict()
+    yesterday_trend = df_yesterday.groupby('hour')['Vehicles'].mean().to_dict()
+    
+    # Ensure JSON serializable formatting and chronological hours
+    results = []
+    # Plot from 0 to 23 hours
+    for h in range(24):
+        # Only add hours that exist or 0
+        results.append({
+            "hour": h,
+            "today": round(today_trend.get(h, 0), 1),
+            "yesterday": round(yesterday_trend.get(h, 0), 1)
+        })
+    return results
 
 def junction_analysis(df: pd.DataFrame):
     if df.empty: return []
