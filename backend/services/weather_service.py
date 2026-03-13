@@ -6,6 +6,7 @@ from urllib.request import urlopen
 
 from dotenv import load_dotenv
 from fastapi import HTTPException
+from services.cache_utils import cache
 
 load_dotenv()
 
@@ -85,6 +86,7 @@ MOLECULAR_WEIGHTS = {
     "no2": 46.0055,
     "so2": 64.066,
 }
+OPENWEATHER_CACHE_TTL_SECONDS = 300
 
 
 def get_request_coordinates(lat=None, lon=None):
@@ -168,6 +170,11 @@ def call_openweather(url, *, lat=None, lon=None, extra_params=None):
         query_params.update(extra_params)
 
     query = urlencode(query_params)
+    cache_key = f"openweather:{url}:{query}"
+
+    cached_payload = cache.get(cache_key)
+    if cached_payload is not None:
+        return cached_payload, request_lat, request_lon
 
     try:
         with urlopen(f"{url}?{query}", timeout=10) as response:
@@ -184,6 +191,7 @@ def call_openweather(url, *, lat=None, lon=None, extra_params=None):
             detail=f"Unable to reach OpenWeather: {exc.reason}",
         ) from exc
 
+    cache.set(cache_key, payload, OPENWEATHER_CACHE_TTL_SECONDS)
     return payload, request_lat, request_lon
 
 
