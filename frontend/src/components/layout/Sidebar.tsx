@@ -7,6 +7,7 @@ import {
   Map, 
   Wind, 
   Bus, 
+  Zap,
   Settings, 
   HelpCircle,
   LayoutDashboard
@@ -48,6 +49,12 @@ export default function Sidebar() {
           icon={<Bus />} 
           label="Public Transport" 
           active={pathname === "/transport"} 
+        />
+        <SidebarItem 
+          href="/energy" 
+          icon={<Zap />} 
+          label="Energy Consumption" 
+          active={pathname === "/energy"} 
         />
       </nav>
 

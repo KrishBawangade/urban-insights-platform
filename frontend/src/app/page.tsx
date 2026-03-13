@@ -3,7 +3,7 @@
 import StatCard from "@/components/dashboard/StatCard";
 import ChartCard from "@/components/dashboard/ChartCard";
 import InsightPanel from "@/components/dashboard/InsightPanel";
-import { Car, Wind, Users, AlertTriangle } from "lucide-react";
+import { Car, Wind, Users, AlertTriangle, Zap } from "lucide-react";
 import { 
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
   BarChart, Bar, Legend
@@ -39,7 +39,7 @@ export default function DashboardPage() {
       </header>
 
       {/* Primary Metrics */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
         <StatCard 
           title="Avg. Traffic Density" 
           value="72%" 
@@ -63,6 +63,14 @@ export default function DashboardPage() {
           isPositive={true}
           icon={<Users className="w-5 h-5" />}
           accentColor="bg-transport"
+        />
+        <StatCard 
+          title="City Grid Load" 
+          value="84%" 
+          trend="1.2%" 
+          isPositive={false}
+          icon={<Zap className="w-5 h-5" />}
+          accentColor="bg-amber-500"
         />
         <StatCard 
           title="Active Alerts" 

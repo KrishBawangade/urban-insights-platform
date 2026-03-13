@@ -21,7 +21,7 @@ export default function Header() {
         <div className="flex items-center gap-3 pl-4 border-l border-border cursor-pointer">
           <div className="text-right hidden sm:block">
             <p className="text-sm font-medium text-foreground leading-none">Admin User</p>
-            <p className="text-xs text-muted-foreground mt-1">Hackathon Team</p>
+            <p className="text-xs text-muted-foreground mt-1">Phantom Minds</p>
           </div>
           <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary font-semibold">
             A
