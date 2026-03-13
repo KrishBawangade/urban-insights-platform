@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from routes.air_quality_routes import router as air_quality_router
 from routes.traffic_routes import router as traffic_router
 from services.data_loader import load_traffic_data
 
@@ -19,6 +20,7 @@ app.add_middleware(
 
 # Register specialized routes
 app.include_router(traffic_router)
+app.include_router(air_quality_router)
 
 @app.on_event("startup")
 def startup_event():
